@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## INSTALL PRETTIER ESLINT
+
+
+1. command: `ng add @angular-eslint/schematics`
+
+
+## Install and configure Prettier
+2. command: `npm install prettier --save-dev`
+3. Add .prettierignore and .prettierrc files with the configuration data
+
+
+## Configure Prettier to be used as an ESLint plugin
+4. command: `npm install prettier-eslint eslint-config-prettier eslint-plugin-prettier`
+5. Add a line in `extends` property of .eslintrc.json file:
+...
+`plugin:prettier/recommended`
+...
+
+6. command: `ng lint`
